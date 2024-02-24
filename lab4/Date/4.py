@@ -1,0 +1,21 @@
+import datetime
+import math
+year1 = int(input("First_Date_Year = "))
+month1 = int(input("First_Date_Month = "))
+day1 = int(input("First_Date_Day = "))
+hour1 = int(input("First_Date_Hour = "))
+minute1 = int(input("First_Date_Minute = "))
+second1 = int(input("First_Date_Second = "))
+date1 = datetime.datetime(year1 , month1 , day1 , hour1 , minute1 , second1)
+year2 = int(input("Second_Date_Year = "))
+month2 = int(input("Second_Date_Month = "))
+day2 = int(input("Second_Date_Day = "))
+hour2 = int(input("Second_Date_Hour = "))
+minute2 = int(input("Second_Date_Minute = "))
+second2 = int(input("Second_Date_Second = "))
+date2 = datetime.datetime(year2 , month2 , day2 , hour2 , minute2 , second2)
+dif_between_them = abs(year1-year2)*31536000 + abs(month1-month2)*2592000 + abs(day1-day2)*86400 + abs(hour1-hour2)*3600 + abs(minute1-minute2)*60 + abs(second1-second2)
+print("First date :",date1)
+print("Second date :",date2)
+print(dif_between_them , "second")
+
