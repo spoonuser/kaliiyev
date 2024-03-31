@@ -9,9 +9,7 @@ square = pygame.Surface((50,100))
 square.fill((219, 22, 101))
 square = pygame.Surface((50,100))
 ButtonD = False
-ButtonW = False
 ButtonA = False
-ButtonS = False
 a = 300
 b = 500
 c = 15
@@ -54,7 +52,7 @@ while runer:
             screen.blit(coinn,(coin[0],coin[1]))
             coin[1] = coin[1] + 5
     
-    clock.tick(60)
+    clock.tick(100)
     pygame.time.set_timer(pygame.USEREVENT, 1000)
     if game:
         screen.blit(players_car,(a,b))
@@ -65,13 +63,11 @@ while runer:
             break
     state = pygame.key.get_pressed()            
     if state[pygame.K_RIGHT]:
-        if a < 580:
+        if a < 500:
             a = a + c
     if state[pygame.K_LEFT]:
         if a > 20:
             a = a - c
-        if b < 780:
-            b = b + c
     for ball in balls:
         if abs(a-ball[0])<=40 and abs(b-ball[1]) <=40:
             game = False
