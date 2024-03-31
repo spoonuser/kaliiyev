@@ -70,10 +70,6 @@ while runer:
     if state[pygame.K_LEFT]:
         if a > 20:
             a = a - c
-    if state[pygame.K_UP]:
-        if b > 20:
-            b = b - c
-    if state[pygame.K_DOWN]:
         if b < 780:
             b = b + c
     for ball in balls:
