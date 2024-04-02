@@ -16,11 +16,11 @@ c = 15
 d = 0
 x,y = 0,0
 game = True
-players_car = pygame.image.load(r"C:\Users\alpam\Downloads\31.03.2024 18_35_42.png")#playercar.png
-enemy_car = pygame.image.load(r"C:\Users\alpam\Downloads\31.03.2024 19_41_07.png")#enemycar.png
-road = pygame.image.load(r"C:\Users\alpam\Pictures\photo_2024-03-31_19-56-23.jpg")#road.jpg
-over = pygame.image.load(r"C:\Users\alpam\Downloads\31.03.2024 21_02_29.png")#gameover.png
-coinn = pygame.image.load(r"C:\Users\alpam\Pictures\31.03.2024 20_11_31.png")#coin.png
+players_car = pygame.image.load('Pictures/playercar.png')
+enemy_car = pygame.image.load('Pictures/enemycar.png')
+road = pygame.image.load('Pictures/road.jpg')
+over = pygame.image.load('Pictures/gameover.png')
+coinn = pygame.image.load('Pictures/coin.png')
 start_time = pygame.time.get_ticks()
 start_time2 = pygame.time.get_ticks()
 state = pygame.key.get_pressed()
@@ -28,7 +28,7 @@ balls = []
 coins = []
 score = 0
 font_score = pygame.font.SysFont('Arial' , 26 , bold = True)
-pygame.mixer.music.load(r"C:\Users\alpam\Music\Coin_Pick.mp3")#Coin_Pick.mp3
+pygame.mixer.music.load('Audio/Coin_Pick.mp3')
 while runer:
     if game:
         screen.blit(road,(0,0))
