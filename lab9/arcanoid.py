@@ -34,7 +34,7 @@ game_score_rect = game_score_text.get_rect()
 game_score_rect.center = (210, 20)
 
 #Catching sound
-collision_sound = pygame.mixer.Sound(r"C:\Users\alpam\Music\Coin_Pick.mp3")
+collision_sound = pygame.mixer.Sound('Audio/Coin_Pick.mp3')
 
 def detect_collision(dx, dy, ball, rect):
     if dx > 0:
